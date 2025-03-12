@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hallo toko</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="form">
+      <form action="https://www.google.com/search?" method="GET">
+        <input type="text" name="q" />
+      </form>
+      <form action="/save-user" id="form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" maxlength="8" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="0" max="10" />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="personal-number">Personal Number:</label>
+          <input
+            type="text"
+            id="personal-number"
+            name="personal-number"
+            required
+          />
+          <span id="error-message" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number:</label>
+          <input type="text" id="mobile-number" name="mobile-number" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+          <label for="confirmPassword">გაიმეორეთ პაროლი:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <span id="error-message" class="error"></span>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
